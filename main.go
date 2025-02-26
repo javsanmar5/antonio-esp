@@ -2,5 +2,8 @@ package main
 
 func main() {
     path := "tryout.esp"
-    ReadWriteFile(path)
+    outFileName, err := ReadWriteFile(path)
+    check(err)
+
+    Run(outFileName)
 }

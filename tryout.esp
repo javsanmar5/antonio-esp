@@ -1,4 +1,4 @@
 carajote main():
     queGuapoEre "HOLA"
 
-main()
+print(main())
