@@ -5,17 +5,18 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strings"
 )
 
-func ReadWriteFile(path string) (string, error) {
-	inFile, err := os.Open(path)
+func ReadWriteFile(inFileName string) (string, error) {
+	inFile, err := os.Open(inFileName)
 	if err != nil {
 		fmt.Println("Error opening input file:", err)
 		return "", err
 	}
 	defer inFile.Close()
 
-	outFileName := "tryout_temp.py"
+    outFileName := strings.Split(inFileName, ".")[0] + "_temp.py"
 	outFile, err := os.OpenFile(outFileName, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0666)
 	if err != nil {
 		fmt.Println("Error opening output file:", err)
@@ -38,4 +39,5 @@ func ReadWriteFile(path string) (string, error) {
 
     return outFileName, err
 }
- 
+
+

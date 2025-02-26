@@ -1,8 +1,11 @@
 package main
 
+import "os"
+
 func main() {
-    path := "tryout.esp"
-    outFileName, err := ReadWriteFile(path)
+    
+    inFileName := os.Args[1]
+    outFileName, err := ReadWriteFile(inFileName)
     check(err)
 
     Run(outFileName)
