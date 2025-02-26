@@ -40,4 +40,7 @@ func ReadWriteFile(inFileName string) (string, error) {
     return outFileName, err
 }
 
-
+func DeleteFile(outFileName string) {
+    err := os.Remove(outFileName)
+    check(err)
+}

@@ -9,4 +9,5 @@ func main() {
     check(err)
 
     Run(outFileName)
+    DeleteFile(outFileName)
 }
