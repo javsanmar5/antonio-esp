@@ -46,9 +46,32 @@ func ReadWriteFile(path string) {
 
 
 func changeLine(line string) string {
-    reservedWords := map[string]string {
-        "carajote": "def",
-        "queGuapoEre": "return",
+    reservedWords := map[string]string{
+        "QueVa":        "False",
+        "Nanai":        "None",
+        "Ji":           "True",
+        "asopla":       "and",
+        "perroSanche":  "break",
+        "tiktok":       "class",
+        "biblio":       "continue",
+        "carajote":     "def",
+        "agenda2030":   "del",
+        "porElCuloQue": "elif",
+        "que":          "else",
+        "incompetente": "except",
+        "JAJAJAJA":     "finally",
+        "unaDuda":      "for",
+        "queVuelva":    "from",
+        "porElCulo":    "if",
+        "deLaMili":     "import",
+        "porfi":        "in",
+        "eIgua":        "is",
+        "mujer":        "not",
+        "piola":        "or",
+        "niCaso":       "pass",
+        "queGuapoEre":  "return",
+        "rojo":         "try",
+        "vivaVox":      "while",
     }
     splited := strings.Split(line, " ")
     var o []string
