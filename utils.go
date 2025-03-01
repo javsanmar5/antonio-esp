@@ -2,6 +2,35 @@ package main
 
 import "strings"
 
+var reservedWords = map[string]string{
+    "QueVa":        "False",
+    "Nanai":        "None",
+    "Ji":           "True",
+    "asopla":       "and",
+    "perroSanche":  "break",
+    "tiktok":       "class",
+    "biblio":       "continue",
+    "carajote":     "def",
+    "agenda2030":   "del",
+    "porElCuloQue": "elif",
+    "que":          "else",
+    "incompetente": "except",
+    "JAJAJAJA":     "finally",
+    "unaDuda":      "for",
+    "queVuelva":    "from",
+    "porElCulo":    "if",
+    "deLaMili":     "import",
+    "porfi":        "in",
+    "eIgua":        "is",
+    "mujer":        "not",
+    "piola":        "or",
+    "niCaso":       "pass",
+    "queGuapoEre":  "return",
+    "rojo":         "try",
+    "vivaVox":      "while",
+}
+
+
 func check(e error) {
     if e != nil {
         panic(e)
@@ -9,33 +38,6 @@ func check(e error) {
 }
 
 func changeLine(line string) string {
-    reservedWords := map[string]string{
-        "QueVa":        "False",
-        "Nanai":        "None",
-        "Ji":           "True",
-        "asopla":       "and",
-        "perroSanche":  "break",
-        "tiktok":       "class",
-        "biblio":       "continue",
-        "carajote":     "def",
-        "agenda2030":   "del",
-        "porElCuloQue": "elif",
-        "que":          "else",
-        "incompetente": "except",
-        "JAJAJAJA":     "finally",
-        "unaDuda":      "for",
-        "queVuelva":    "from",
-        "porElCulo":    "if",
-        "deLaMili":     "import",
-        "porfi":        "in",
-        "eIgua":        "is",
-        "mujer":        "not",
-        "piola":        "or",
-        "niCaso":       "pass",
-        "queGuapoEre":  "return",
-        "rojo":         "try",
-        "vivaVox":      "while",
-    }
     splited := strings.Split(line, " ")
     var o []string
 
