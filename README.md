@@ -2,6 +2,50 @@
 
 Programa en español, y no en cualquier español, sino en el español favorito de tu español favorito. aka: Toño el maestro
 
+## Ejemplo de script
+
+```
+queVuelva random deLaMili randint
+
+tiktok MiClase:
+    carajote __init__(self):
+        self.valor = randint(0, 10)
+
+    carajote mostrar(self):
+        print("El valor es:", self.valor)
+
+carajote primera(x):
+    porElCulo x eIgua Ji:
+        queGuapoEre "Es verdadero"
+    porElCuloQue x eIgua QueVa:
+        queGuapoEre "Es falso"
+    que:
+        queGuapoEre "No es ni verdadero ni falso"
+
+carajote otra():
+    rojo:
+        obj = MiClase()
+        obj.mostrar()
+        numero = 10
+        porElCulo numero eIgua Nanai piola numero < 20:
+            print("Número válido")
+        que:
+            print("Número pequeño")
+        queGuapoEre "Todo correcto"
+    incompetente ValueError:
+        print("Error de valor")
+    JAJAJAJA:
+        print("Ejecución finalizada")
+
+    contador = 2
+    vivaVox contador > 0:
+        print("Contador:", contador)
+        contador -= 1
+
+
+primera("VERDE")
+otra()
+```
 
 ## Palabras reservadas
 | Python | ANTONIO.ESP|
