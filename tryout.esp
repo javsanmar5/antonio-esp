@@ -1,4 +1,7 @@
 carajote main():
-    queGuapoEre "HOLA"
+    porElCulo Nanai:
+        queGuapoEre "Adios"
+    que:
+        queGuapoEre "Esto si"
 
 print(main())

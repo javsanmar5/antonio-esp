@@ -38,15 +38,17 @@ func check(e error) {
 }
 
 func changeLine(line string) string {
-    splited := strings.Split(line, " ")
+    spaceSplitted := strings.Split(line, " ")
     var o []string
 
-    for _, word := range splited {
-        if antoWord, ok := reservedWords[word]; ok {
-            o = append(o, antoWord)
-        } else {
-            o = append(o, word)
+    for _, part := range spaceSplitted {
+        colonSplitted := strings.Split(part, ":")
+        for i, word := range colonSplitted {
+            if antoWord, ok := reservedWords[word]; ok {
+                colonSplitted[i] = antoWord
+            }
         }
+        o = append(o, strings.Join(colonSplitted, ":"))
     }
     return strings.Join(o, " ") 
 }
